@@ -11,12 +11,9 @@ phases:
       - curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
       - sudo yum install nodejs
       - npm install
-
-  build:
-    commands:
-      - echo Building for production
-      - rm -rf node_modules
-      - npm install --production
+      - npm test
+      - npm start
+      - node server.js
 
 artifacts:
   files:
