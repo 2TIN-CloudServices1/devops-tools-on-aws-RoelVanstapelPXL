@@ -8,6 +8,7 @@ phases:
   pre_build:
     commands:
       - echo Running tests
+      - echo hallo
       - npm install
       - sudo yum install curl
       #- curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
